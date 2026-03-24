@@ -40,15 +40,28 @@
 
     .post-list li {
       display: flex;
-      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      /* justify-content: space-between; */
       padding: 6px 0;
     }
 
     .date {
-      color: #777;
+      color: #c00;
+      min-width: 70px;
       font-size: 14px;
-      white-space: nowrap;
-      margin-left: 20px;
+      /*white-space: nowrap;*/
+      /*margin-left: 20px;*/
+    }
+
+    /* Post title (blue link) */
+    .post-link {
+      color: #06c;
+      text-decoration: none;
+    }
+
+    .post-link:hover {
+      text-decoration: underline;
     }
 
     footer {
