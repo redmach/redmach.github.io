@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div style="text-align: center; margin-top: 10px;">
+<div style="float: left; margin-right: 20px; margin-top: 10px;">
   <img src="{{ '/imgs/hexley_fork_450_darwin.png' | relative_url }}" alt="Darwin macOS Dragon" style="max-width: 80px; height: auto; border-radius: 50%; margin-top: 5px;">
 </div>
 
