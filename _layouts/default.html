@@ -45,6 +45,24 @@
       white-space: nowrap;
     }
 
+    @media (max-width: 480px) {
+      .header-inner {
+        gap: 5px; /* Reduce gap between title and bio */
+        font-size: 14px; /* Reduce font size */
+      }
+
+      .site-title {
+        font-size: 16px; /* Reduce title size on small screens */
+      }
+
+      .site-bio {
+        font-size: 12px; /* Reduce bio font size */
+        max-width: 80%; /* Limit the width of bio to fit within the screen */
+        overflow: hidden; /* Ensure text doesn't overflow */
+        text-overflow: ellipsis; /* Add ellipsis if text is too long */
+      }
+    }
+    
     h1 {
       font-size: 28px;
       font-weight: 600;
