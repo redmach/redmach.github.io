@@ -1,47 +1,125 @@
-<style>
-  body {
-    font-family: Georgia, "Times New Roman", serif;
-    max-width: 720px;
-    margin: 60px auto;
-    padding: 0 20px;
-    line-height: 1.75;
-    color: #111;
-    background: #fff;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  a {
-    color: #111;
-    text-decoration: none;
-    border-bottom: 1px solid #ddd;
-  }
+  <title>{{ page.title }}</title>
 
-  a:hover {
-    border-bottom: 1px solid #111;
-  }
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 20px;
+      line-height: 1.75;
+      color: #111;
+      background: #fff;
+    }
 
-  h1 {
-    font-size: 32px;
-    font-weight: normal;
-    margin-bottom: 40px;
-  }
+    header {
+      margin-bottom: 60px;
+    }
 
-  p {
-    margin: 20px 0;
-  }
+    header a {
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      color: #111;
+      text-decoration: none;
+    }
 
-  .post-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 30px;
-  }
+    a {
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #ddd;
+    }
 
-  .post-list li {
-    margin-bottom: 14px;
-  }
+    a:hover {
+      border-bottom: 1px solid #111;
+    }
 
-  .date {
-    color: #888;
-    margin-left: 10px;
-    font-size: 14px;
-  }
-</style>
+    h1 {
+      font-size: 32px;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    .post-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .post-list li {
+      margin-bottom: 14px;
+    }
+
+    .date {
+      color: #888;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    article {
+      margin-top: 40px;
+    }
+
+    article p {
+      font-size: 18px;
+    }
+
+    article h2 {
+      margin-top: 40px;
+    }
+
+    footer {
+      margin-top: 80px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111;
+        color: #eee;
+      }
+
+      header a {
+        color: #eee;
+      }
+
+      a {
+        color: #eee;
+        border-bottom: 1px solid #444;
+      }
+
+      a:hover {
+        border-bottom: 1px solid #eee;
+      }
+
+      .date {
+        color: #aaa;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="/">Polly</a>
+  </header>
+
+  {{ content }}
+
+  <footer>
+    <p>© 2026 Polly</p>
+  </footer>
+
+</body>
+</html>
