@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,117 +8,63 @@
 
   <style>
     body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 720px;
-      margin: 20px auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 760px;
+      margin: 60px auto;
       padding: 0 20px;
-      line-height: 1.75;
+      line-height: 1.6;
       color: #111;
       background: #fff;
-    }
-
-    header {
-      margin-bottom: 15px;
-    }
-
-    header a {
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      color: #111;
-      text-decoration: none;
     }
 
     a {
       color: #111;
       text-decoration: none;
-      border-bottom: 1px solid #ddd;
     }
 
     a:hover {
-      border-bottom: 1px solid #111;
+      text-decoration: underline;
     }
 
     h1 {
-      font-size: 32px;
-      font-weight: normal;
+      font-size: 28px;
+      font-weight: 600;
       margin-bottom: 40px;
-    }
-
-    p {
-      margin: 20px 0;
     }
 
     .post-list {
       list-style: none;
       padding: 0;
-      margin-top: 30px;
+      margin: 0;
     }
 
     .post-list li {
-      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
     }
 
     .date {
-      color: #888;
-      margin-left: 10px;
+      color: #777;
       font-size: 14px;
-    }
-
-    article {
-      margin-top: 40px;
-    }
-
-    article p {
-      font-size: 18px;
-    }
-
-    article h2 {
-      margin-top: 40px;
+      white-space: nowrap;
+      margin-left: 20px;
     }
 
     footer {
-      margin-top: 80px;
-      font-size: 14px;
+      margin-top: 60px;
       color: #888;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: #111;
-        color: #eee;
-      }
-
-      header a {
-        color: #eee;
-      }
-
-      a {
-        color: #eee;
-        border-bottom: 1px solid #444;
-      }
-
-      a:hover {
-        border-bottom: 1px solid #eee;
-      }
-
-      .date {
-        color: #aaa;
-      }
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <a href="/">0x54m</a>
-  </header>
-
   {{ content }}
 
   <footer>
-    <p>© 2026 0x54m</p>
+    © 2026 Polly
   </footer>
 
 </body>
