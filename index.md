@@ -1,8 +1,15 @@
 ---
-layout: home
-title: Home
+layout: default
+title: Samet
 ---
 
-Hello 👋
+# Samet
 
-I'm interested in all-things security, from reverse engineering to exploit development.
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+    </li>
+  {% endfor %}
+</ul>
