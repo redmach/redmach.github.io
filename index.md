@@ -3,11 +3,10 @@ layout: default
 title: Home
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-    </li>
-  {% endfor %}
+Posts count: {{ site.posts | size }}
+
+<ul>
+{% for post in site.posts %}
+  <li>{{ post.title }}</li>
+{% endfor %}
 </ul>
