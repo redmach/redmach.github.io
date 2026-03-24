@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div style="text-align: center; margin-top: 10px;">
-  <img src="{{ '/assets/imgs/hexley_fork_450_darwin.png' | relative_url }}" alt="Darwin macOS Dragon" style="max-width: 80px; height: auto; margin-top: 5px;">
+  <img src="{{ '/imgs/hexley_fork_450_darwin.png' | relative_url }}" alt="Darwin macOS Dragon" style="max-width: 80px; height: auto; border-radius: 50%; margin-top: 5px;">
 </div>
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
