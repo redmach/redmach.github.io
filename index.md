@@ -8,6 +8,7 @@ title: Home
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
+      <span class="bullet">•</span>
       <span class="date">{{ post.date | date: "%b %d" }}</span>
       <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
     </li>
