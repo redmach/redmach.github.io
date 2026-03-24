@@ -1,4 +1,3 @@
----
 layout: default
 title: Home
 ---
@@ -25,9 +24,7 @@ title: Home
     {% endfor %}
 
     {% if year_posts == empty %}
-      <li style="color: #888; font-size: 14px; padding: 4px 0;">
-        No posts
-      </li>
+      <li class="no-posts">No posts</li>
     {% endif %}
   </ul>
 
