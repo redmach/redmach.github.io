@@ -5,6 +5,10 @@ title: Home
 
 <h1>{{ site.title }}</h1>
 
+<p style="margin-top: -10px; margin-bottom: 30px; color: #555;">
+  {{ site.bio }}
+</p>
+
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 {% for year in posts_by_year %}
