@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>{{ page.title }}</title>
 
   <style>
@@ -23,12 +22,24 @@
       margin-bottom: 30px;
     }
 
-    header a {
+    .header-inner {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .site-title {
       font-size: 18px;
       font-weight: bold;
-      border: none;
       color: #111;
       text-decoration: none;
+    }
+
+    .site-bio {
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", serif;
     }
 
     h1 {
