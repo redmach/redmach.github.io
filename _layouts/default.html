@@ -90,7 +90,10 @@
 <body>
 
   <header>
-    <a href="/">{{ site.title }}</a>
+    <div class="header-inner">
+      <a href="/" class="site-title">{{ site.title }}</a>
+      <span class="site-bio">{{ site.bio }}</span>
+    </div>
   </header>
 
   {{ content }}
