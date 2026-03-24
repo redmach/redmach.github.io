@@ -91,9 +91,17 @@
     }
 
     footer {
-      margin-top: 60px;
+      border-top: 1px solid #c00;
+      padding-top: 10px;
+      margin-top: 30px;
       color: #888;
       font-size: 14px;
+      text-align: center;
+    }
+
+    footer .disclaimer {
+      font-style: italic;
+      color: #555;
     }
   </style>
 </head>
@@ -110,7 +118,9 @@
   {{ content }}
 
   <footer>
-    © 2026 {{ site.title }}
+    <div class="disclaimer">
+      Disclaimer: All content is original and opinions expressed are solely those of the author.
+    </div>
   </footer>
 
 </body>
