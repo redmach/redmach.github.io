@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Samet
+title: Hello 👋
 ---
 
 # TESTER
