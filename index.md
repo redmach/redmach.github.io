@@ -10,7 +10,7 @@ title: Home
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
 {% for year in posts_by_year %}
-  <h2 style="margin-top: 30px; font-size: 20px; font-weight: normal;">
+  <h2 style="font-size: 20px; font-weight: normal;">
     {{ year.name }}
   </h2>
 
