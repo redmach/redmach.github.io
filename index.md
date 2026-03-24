@@ -14,7 +14,15 @@ title: Home
   </h2>
 
   <ul class="post-list">
-    {% assign year_posts = site.posts | where_exp:"post", "post.date | date: '%Y' == year" %}
+
+    {% assign year_posts = "" | split: "" %}
+
+    {% for post in site.posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if post_year == year %}
+        {% assign year_posts = year_posts | push: post %}
+      {% endif %}
+    {% endfor %}
 
     {% for post in year_posts %}
       <li>
@@ -27,6 +35,7 @@ title: Home
     {% if year_posts == empty %}
       <li class="no-posts">No posts</li>
     {% endif %}
+
   </ul>
 
 {% endfor %}
