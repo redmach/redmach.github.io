@@ -4,8 +4,6 @@ date: 2025-04-24
 layout: post
 ---
 
-## Mythic
-
 Mythic as a C2 for macOS targets:
 
 - Mythic was designed to control macOS endpoints (via agents like Apollo’s macOS siblings or other macOS‑focused payloads). Mythic as a server stack running on Docker; the Mythic server is a big pile of Docker containers. Docker on macOS itself already runs inside a lightweight VM.
