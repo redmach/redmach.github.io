@@ -1,10 +1,10 @@
 ---
-title: "Test Post"
+title: "Installing Mythic C2 on Kali Linux"
 date: 2025-04-24
 layout: post
 ---
 
-# Getting Started With Mythic C2 on Kali
+# Getting Started With Mythic C2 on Kali Linux
 
 This guide shows how to install Mythic C2 on Kali, configure it, and get a first Windows callback using the Apollo agent and HTTP C2 profile.
 
