@@ -4,6 +4,12 @@ date: 2025-04-24
 layout: post
 ---
 
+## Mythic
+
+Mythic as a C2 for macOS targets:
+
+- Mythic was designed to control macOS endpoints (via agents like Apollo’s macOS siblings or other macOS‑focused payloads). Mythic as a server stack running on Docker; the Mythic server is a big pile of Docker containers. Docker on macOS itself already runs inside a lightweight VM.
+
 This guide shows how to install Mythic C2 on Kali, configure it, and get a first Windows callback using the Apollo agent and HTTP C2 profile.
 
 ---
@@ -219,3 +225,16 @@ shell ipconfig /all
 ```
 
 When the agent checks in, it will execute the command and return the output in the UI.
+
+---
+
+## Summary
+
+You now have:
+
+- Mythic C2 running on Kali.
+- HTTP C2 profile installed and configured for HTTPS on port 443.
+- Apollo agent installed.
+- A Windows EXE payload generated, delivered, and successfully calling back.
+
+From here, you can explore additional agents, profiles, and more advanced configuration in the Mythic documentation.
