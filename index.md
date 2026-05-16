@@ -3,20 +3,16 @@ layout: default
 title: Home
 ---
 
+# redmach
+
+Notes on reverse engineering, exploitation, and macOS internals.
+
+---
+
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-
 {% for year in posts_by_year %}
-  <h2 style="font-size: 20px; font-weight: normal;">
-    {{ year.name }}
-  </h2>
+## {{ year.name }}
 
-  <ul class="post-list">
-    {% for post in year.items %}
-      <li>
-        <span class="bullet">•</span>
-        <span class="date">{{ post.date | date: "%b %d" }}</span>
-        <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+{% for post in year.items %}- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%b %d" }}
+{% endfor %}
 {% endfor %}
